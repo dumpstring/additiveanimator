@@ -148,10 +148,10 @@ function Module.new(Character: Model | Actor): AdditiveAnimator
 		for i, v in ipairs(self.__helpers) do
 			v.character:Destroy()
 		end
-	end)
 
-	table.clear(self)
-	table.freeze(self)
+		table.clear(self)
+		table.freeze(self)
+	end)
 
 	return setmetatable(self :: self, AdditiveAnimator)
 end
