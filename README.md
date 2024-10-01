@@ -6,6 +6,10 @@ by dumpstring
 
 `AdditiveAnimator` is a utility class designed for handling additive animations on Roblox characters.
 
+## WARNING
+
+You have to handle replication for the animator yourself!
+
 ## Features
 
 ### Animation Management
