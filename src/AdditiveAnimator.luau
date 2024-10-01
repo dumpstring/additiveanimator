@@ -144,6 +144,15 @@ function Module.new(Character: Model | Actor): AdditiveAnimator
 		end
 	end)
 
+	Character.Destroying:Connect(function()
+		for i, v in ipairs(self.__helpers) do
+			v.character:Destroy()
+		end
+	end)
+
+	table.clear(self)
+	table.freeze(self)
+
 	return setmetatable(self :: self, AdditiveAnimator)
 end
 
