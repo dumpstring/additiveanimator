@@ -102,9 +102,9 @@ function AdditiveAnimator:LoadAnimation(Animation: Animation)
 end
 
 type self = {
-	GetAllTracks: (self) -> { AnimationTrack },
-	GetPlayingTracks: (self) -> { AnimationTrack },
-	LoadAnimation: (self, Animation: Animation) -> AnimationTrack,
+	GetAllTracks: (self: AdditiveAnimator) -> { AnimationTrack },
+	GetPlayingTracks: (self: AdditiveAnimator) -> { AnimationTrack },
+	LoadAnimation: (self: AdditiveAnimator, Animation: Animation) -> AnimationTrack,
 	__helpers: {
 		{
 			character: Model | Actor,
