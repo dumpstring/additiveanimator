@@ -21,7 +21,7 @@ The `AdditiveAnimator` provides methods to load animations, retrieve tracks, and
 
 ## Installation
 
-To use the `AdditiveAnimator` class, require the module within your script as follows:
+To use the `AdditiveAnimator` class, grab a release from [releases](https://github.com/dumpstring/additiveanimator/releases/latest) & require the module within your script as follows:
 
 ```lua
 local AdditiveAnimator = require(path.to.AdditiveAnimator)
